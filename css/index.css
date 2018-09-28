@@ -1,0 +1,570 @@
+
+/*
+* @Author: Administrator
+* @Date:   2018-08-20 09:35:52
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-09-20 17:13:16
+*/
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+/* 头部开始 */
+header{
+	width: 100%;
+	height: 79px;
+	background: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	transition: .3s;
+}
+header .h_c{
+	width: 1170px;
+	height: 100%;
+	margin: 0 auto;
+}
+/* logo开始 */
+header .h_c .h_c_l{
+	float: left;
+}
+header .h_c .h_c_l>a{
+	height: 79px;
+	display: block;
+	overflow: hidden;
+
+}
+header .h_c .h_c_l>a>img{
+	display: block;
+	width: 144px;
+	margin-top: 18px;
+
+}
+/* logo 结束*/
+/* 导航 开始 */
+header .h_c .h_c_r{
+	width: 572px;
+	height: 100%;
+	float: right;
+}
+header .h_c .h_c_r>ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	line-height: 79px;
+}
+header .h_c .h_c_r>ul>li:hover a{
+	color: #19a6cb;
+}
+header .h_c .h_c_r>ul>li>a{
+	color: #fff;
+	font-size: 14px;
+}
+header .h_c .h_c_r>ul>li>a.active{
+	color: #19a6cb;
+}
+/* 导航结束 */
+/* 头部结束 */
+/* banner 开始*/
+.banner{
+	width: 100%;
+	height: 759px;
+	margin-bottom: 63px;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner .items>li{
+	position: absolute;
+	top: 0;
+	left: 1366px;
+}
+.banner .items>li>img{
+	height: 759px;
+}
+.banner .next,.banner .prev{
+	/* display: none; */
+	background: rgba(0, 0, 0, 0);
+	height: 100%;
+	width: 200px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	color: rgba(255, 255, 255, 0);
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 30px;
+}
+.banner .prev:hover{
+	background: -webkit-linear-gradient(left,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.01));
+	color: rgba(255, 255, 255, 0.3);
+}
+.banner .next:hover{
+	background: -webkit-linear-gradient(left,rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0.5));
+	color: rgba(255, 255, 255, 0.3);
+}
+.banner .prev{
+	
+	line-height: 759px;
+	text-align: right;
+	left: 0px;	
+}
+.banner .next{
+	
+	line-height: 759px;
+	text-align: left;
+	right: 0px;
+}
+.banner .btns{
+	width: 30px;
+	height: 10px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 28px;
+	display: flex;
+	justify-content: space-between;
+}
+.banner .btns>li{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: rgba(255,255,255,.3);
+	/* float: left; */
+}
+.banner .btns>li.active{
+	background: rgba(0, 0, 0, 0.3);
+}
+/* .banner .btns>li:last-child{
+	background: rgba(255, 255, 255, 0.5);
+} */
+.banner .des{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 57px;
+	opacity: 0;
+	text-align: center;
+	color: #fff;
+	font-size: 34px;
+	transition: .3s;
+}
+/* banner 结束 */
+/* 素馨花艺开始 */
+.flower{
+	width: 1170px;
+	height: 680px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+.flower .next,.flower .prev{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 30px;
+	color: #c7ced3;
+	height: 30px;
+}
+.flower .next{
+	right: -10px;
+}
+.flower .prev{
+	left: -10px;
+}
+.flower .f_top{
+	top: -100px;
+	width: 224px;
+	height: 56px;
+	line-height: 56px;
+	margin: 0 auto;
+	position: relative;
+	opacity: 0;
+	transition: .5s;
+	/* background: yellow; */
+}
+.flower .f_top .title{
+	font-size: 36px;
+	color: #37474f;
+	float: left;
+}
+.flower .f_top>a{
+	position: relative;
+	display: block;
+	width: 55px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 2px;
+	background: #16b0dc;
+	float: right;
+	margin-top: 13px;
+}
+.flower .f_top>a>i{
+	color: #16b0dc;
+	position: absolute;
+	left: -11px;
+	top: 0;
+}
+.flower .des{
+	height: 35px;
+	line-height: 35px;
+	color: #708395;
+	margin-bottom: 44px;
+}
+.flower .f_c{
+	width: 1140px;
+	height: 478px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.swiper-container {
+    width: 100%;
+    height: 478px;
+}
+.swiper-slide{
+	width: 320px;
+	/* background: red; */
+}
+.flower .f_c .swiper-container .swiper-wrapper .swiper-slide>img{
+	width: 320px;
+	height: 320px;
+	border-radius: 50%;
+}
+.flower .f_c .swiper-container .swiper-wrapper .swiper-slide>p{
+	text-align: center;
+	height: 42px;
+	line-height: 42px;
+	color: #6b767c;
+	margin: 0 auto;
+	width: 320px;
+}
+.flower .f_c .swiper-container .swiper-wrapper .swiper-slide>p.content{
+	text-align: left;
+	line-height: 22px;
+	height: 66px;
+	font-size: 12px;
+	margin-bottom: 11px;
+}
+.flower .f_c .swiper-container .swiper-wrapper .swiper-slide .btn{
+	display: block;
+	line-height: 36px;
+	color: #fff;
+	width: 320px;
+	height: 36px;
+	background: #f96868;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+.flower .f_c .swiper-container .swiper-wrapper .swiper-slide .btn>i{
+	margin-right: 10px;
+	color: #9c2115;
+	font-size: 18px;
+	vertical-align: -1px;
+}
+/* .flower .f_c>ul{
+	position: absolute;
+	top: 0;
+	left: 1140px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+
+}
+.flower .f_c>ul>li{
+
+	width: 320px;
+	height: 100%;
+}
+.flower .f_c>ul>li>img{
+	width: 320px;
+	height: 320px;
+	border-radius: 50%;
+}
+.flower .f_c>ul>li>p{
+	text-align: center;
+	height: 42px;
+	line-height: 42px;
+	color: #6b767c;
+}
+.flower .f_c>ul>li>p.content{
+	text-align: left;
+	line-height: 22px;
+	height: 66px;
+	font-size: 12px;
+	margin-bottom: 11px;
+}
+.flower .f_c>ul>li .btn{
+	display: block;
+	line-height: 36px;
+	color: #fff;
+	width: 100%;
+	height: 36px;
+	background: #f96868;
+	border-radius: 5px;
+}
+.flower .f_c>ul>li .btn>i{
+	margin-right: 10px;
+	color: #9c2115;
+	font-size: 18px;
+	vertical-align: -1px;
+} */
+/* 素馨花艺结束 */
+/* 素馨花语开始 */
+.f_lan_bg{
+	width: 100%;
+	height: 707px;
+	background: #f5f5f5;
+	padding-top: 63px;
+	box-sizing: border-box;
+	margin-bottom: 74px;
+}
+.f_lan{
+	width: 1170px;
+	height: 644px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.f_lan .f_top{
+	width: 224px;
+	height: 56px;
+	line-height: 56px;
+	margin: 0 auto 43px;
+	position: relative;
+	top: -100px;
+	opacity: 0;
+	transition: .5s;
+	/* background: yellow; */
+}
+.f_lan .f_top .title{
+	font-size: 36px;
+	color: #37474f;
+	float: left;
+}
+.f_lan .f_top>a{
+	position: relative;
+	display: block;
+	width: 55px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 2px;
+	background: #16b0dc;
+	float: right;
+	margin-top: 13px;
+}
+.f_lan .f_top>a>i{
+	color: #16b0dc;
+	position: absolute;
+	left: -11px;
+	top: 0;
+}
+/* 列表开始 */
+.f_lan .list{
+	width: 1130px;
+	height: 475px;
+	margin: 0 auto;
+}
+.f_lan .list>ul{
+	/* position: relative; */
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.f_lan .list>ul>li{
+	position: relative;
+	left: 0;
+	flex-shrink: 0;
+	width: 550px;
+	height: 96px;
+	opacity: 0;
+	transition: .5s;
+}
+.f_lan .list>ul>li .list_item_l{
+	width: 160px;
+	height:100%;
+	float: left;
+
+}
+.f_lan .list>ul>li .list_item_l>a{
+	display: block;
+}
+.f_lan .list>ul>li .list_item_l>a>img{
+	border-radius: 5px;
+	display: block;
+	width: 160px;
+}
+.f_lan .list>ul>li .list_item_r{
+	float: right;
+	width: 370px;
+	height: 100%;
+}
+.f_lan .list>ul>li .list_item_r .title{
+	/* font-weight: 600; */
+	font-size: 18px;
+	color: #2a333c;
+	margin-bottom: 8px;
+	display: block;
+}
+.f_lan .list>ul>li .list_item_r .title:hover{
+	text-decoration: underline;
+	color:#62a8ea ;
+}
+.f_lan .list>ul>li .list_item_r .des{
+	height: 41px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #8d97a1;
+	margin-bottom: 8px;
+}
+.f_lan .list>ul>li .list_item_r .item_info{
+	font-size: 12px;
+	color: #8d97a1;
+}
+.f_lan .list>ul>li .list_item_r .item_info .name{
+	margin: 0 10px;
+}
+.f_lan .list>ul>li .list_item_r .item_info .ping>i{
+	font-size: 12px;
+	vertical-align: 1px;
+	margin-right: 5px;
+}
+/* 列表结束 */
+/* 素馨花语结束 */
+/* 工作室开始 */
+.work{
+	width: 1170px;
+	height: 831px;
+	margin: 0 auto;
+	overflow: hidden;
+	/* border-bottom: 1px solid #f0f2f5; */
+}
+.work .title{
+	top: -100px;
+	transition: .5s;
+	text-align: center;
+	font-size: 36px;
+	color: #37474f;
+	margin-bottom: 94px;
+	position: relative;
+	opacity: 0;
+}
+.work .jianjie{
+	text-align: center;
+	color: #222;
+	font-size: 15px;
+	margin-bottom: 24px;
+}
+.work .can_info{
+	position: relative;
+	top: 300px;
+	text-align: center;
+	color: #222;
+	font-size: 15px;
+	line-height: 33px;
+	margin-bottom: 30px;
+	opacity: 1;
+	transition: .5s;
+}
+.work .map{
+	position: relative;
+	top: 300px;
+	width: 530px;
+	height: 340px;
+	margin: 0 auto;
+	background: yellow;
+	opacity: 0;
+	transition: .5s;
+}
+.work .map>img{
+	display: block;
+	width: 530px;
+	height: 340px;
+}
+.row{
+	width: 100%;
+	height: 1px;
+	background: #f0f2f5;
+	margin-bottom: 20px;
+}
+/* 工作室结束 */
+/* footer 开始 */
+footer{
+	width: 100%;
+	height: 161px;
+	background: #f5f5f5;
+}
+footer .copyright{
+	width: 1170px;
+	height: 100%;
+	text-align: center;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/* 第三方 开始 */
+footer .copyright .service{
+	width: 123px;
+	height: 27px;
+	margin: 24px auto 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+footer .copyright>p{
+	font-size: 13px;
+	color: #aaaaaa;
+}
+footer .copyright .service>a{
+	display: block;
+	font-size: 30px;
+}
+footer .copyright .service>a.weixin{
+	color: #83b944;
+}
+footer .copyright .service>a.qq{
+	color: #62a8ea;
+}
+footer .copyright .service>a.email{
+	color: #62a8ea;
+}
+/* 第三方 结束 */
+footer .copyright .police{
+	font-size: 13px;
+}
+footer .copyright .police>a{
+	color: #62a8ea;
+}
+footer .copyright .police>a:hover{
+	text-decoration: underline;
+}
+footer .copyright .police>img{
+	margin-left: 16px;
+	vertical-align: -2px;
+}
+footer .copyright .tel{
+	height: 38px;
+	line-height: 38px;
+}
+/* footer 结束 */

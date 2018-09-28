@@ -1,0 +1,232 @@
+/*
+* @Author: Administrator
+* @Date:   2018-08-21 13:19:16
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-08-21 15:18:23
+*/
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+/* 头部开始 */
+header{
+	width: 100%;
+	height: 79px;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	border-bottom: 1px solid #d9d9d9;
+}
+header .h_c{
+	width: 1170px;
+	height: 100%;
+	margin: 0 auto;
+}
+/* logo开始 */
+header .h_c .h_c_l{
+	float: left;
+}
+header .h_c .h_c_l>a{
+	height: 79px;
+	display: block;
+	overflow: hidden;
+
+}
+header .h_c .h_c_l>a>img{
+	display: block;
+	width: 144px;
+	margin-top: 18px;
+
+}
+/* logo 结束*/
+/* 导航 开始 */
+header .h_c .h_c_r{
+	width: 572px;
+	height: 100%;
+	float: right;
+}
+header .h_c .h_c_r>ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	line-height: 79px;
+}
+header .h_c .h_c_r>ul>li:hover a{
+	color: #19a6cb;
+}
+header .h_c .h_c_r>ul>li>a{
+	color: #2a333c;
+	font-size: 14px;
+}
+header .h_c .h_c_r>ul>li>a.active{
+	color: #19a6cb;
+}
+/* 导航结束 */
+/* 头部结束 */
+/* banner 开始 */
+.banner{
+	width: 100%;
+	height: 1065px;
+	margin-top: 80px;
+}
+.banner>ul{
+	width: 100%;
+	height: 100%;
+}
+.banner>ul>li{
+	overflow: hidden;
+	position: relative;
+	float: left;
+	width: 674px;
+	height: 533px;
+	background: yellow;
+}
+.banner>ul>li .zhezhao{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.banner>ul>li .zhezhao .z_center{
+	width: 148px;
+	height: 166px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+}
+.banner>ul>li:hover > img{
+	transform: scale(1.2);
+}
+.banner>ul>li:hover .zhezhao .z_center .date{
+	color: rgba(255, 255, 255, 0.8);
+}
+.banner>ul>li:hover .zhezhao .z_center .shortrow{
+	background: rgba(255, 255, 255, 0.8);
+}
+.banner>ul>li:hover .zhezhao .z_center>h2{
+	color: rgba(255, 255, 255, 0.8);
+}
+.banner>ul>li:hover .zhezhao .z_center .browse{
+	color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(255, 255, 255, 0.8);
+}
+.banner>ul>li .zhezhao .z_center .date{
+	font-size: 10px;
+	color: rgba(255, 255, 255, 0.3);
+	margin-top: 17px;
+	margin-bottom: 20px;
+}
+.banner>ul>li .zhezhao .z_center .shortrow{
+	width: 20px;
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
+	margin: 0 auto 17px;
+}
+.banner>ul>li .zhezhao .z_center>h2{
+	font-size: 24px;
+	color: rgba(255, 255, 255, 0.3);
+	margin-bottom: 22px;
+}
+.banner>ul>li .zhezhao .z_center .browse{
+	width: 58px;
+	height: 34px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	margin: 0 auto;
+	border-radius: 5px;
+	line-height: 34px;
+	color: rgba(255, 255, 255, 0.3);
+	transition: 0.3s;
+}
+.banner>ul>li .zhezhao .z_center .browse:hover{
+	background: rgba(255, 255, 255, 0.8);
+	color: #999;
+}
+.banner>ul>li:nth-child(2n){
+	width: 675px;
+}
+.banner>ul>li:nth-child(2n)>img{
+	width: 675px;
+}
+.banner>ul>li>img{
+	height: 533px;
+	width: 674px;
+	transition: 0.3s;
+}
+/* banner 结束 */
+.row{
+	width: 100%;
+	height: 1px;
+	background: #f0f2f5;
+	margin-bottom: 20px;
+}
+/* footer 开始 */
+footer{
+	width: 100%;
+	height: 161px;
+	background: #f5f5f5;
+}
+footer .copyright{
+	width: 1170px;
+	height: 100%;
+	text-align: center;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/* 第三方 开始 */
+footer .copyright .service{
+	width: 123px;
+	height: 27px;
+	margin: 24px auto 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+footer .copyright>p{
+	font-size: 13px;
+	color: #aaaaaa;
+}
+footer .copyright .service>a{
+	display: block;
+	font-size: 30px;
+}
+footer .copyright .service>a.weixin{
+	color: #83b944;
+}
+footer .copyright .service>a.qq{
+	color: #62a8ea;
+}
+footer .copyright .service>a.email{
+	color: #62a8ea;
+}
+/* 第三方 结束 */
+footer .copyright .police{
+	font-size: 13px;
+}
+footer .copyright .police>a{
+	color: #62a8ea;
+}
+footer .copyright .police>a:hover{
+	text-decoration: underline;
+}
+footer .copyright .police>img{
+	margin-left: 16px;
+	vertical-align: -2px;
+}
+footer .copyright .tel{
+	height: 38px;
+	line-height: 38px;
+}
+/* footer 结束 */
